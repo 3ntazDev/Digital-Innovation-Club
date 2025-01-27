@@ -1,6 +1,5 @@
 # Digital Innovation Club Project
-![Digital Innovation Club Logo](./DIC.png)
-
+![Digital Innovation Club Logo](./src/assets/DIC.png)
 
 The **Digital Innovation Club** project is a digital platform aimed at supporting students and innovators. It is built using modern technologies like **React** and **Vite** to provide a seamless and fast experience.
 
