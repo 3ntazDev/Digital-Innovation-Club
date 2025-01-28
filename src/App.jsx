@@ -1,19 +1,30 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Header from "./components/Header"
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Events from "./pages/Events"
+import Team from "./pages/Team"
+import Contact from "./pages/Contact"
+import Graduates from "./pages/Graduates"
 import "./App.css"
 
 function App() {
   return (
-    
-    <div className="App">
-      <Header />
-      <main className="main-content">
-        <h1>مرحبًا بكم في نادي الابتكار الرقمي</h1>
-        <p>هذا هو المحتوى الرئيسي للصفحة.</p>
-      </main>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/graduates" element={<Graduates />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
 export default App
-
 

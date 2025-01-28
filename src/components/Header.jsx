@@ -1,4 +1,7 @@
-import "../styles/Header.css"
+
+import { Link } from 'react-router-dom';
+import "../styles/Header.css";
+
 const Header = () => {
   return (
     <header className="header">
@@ -6,34 +9,34 @@ const Header = () => {
         <nav className="nav">
           <ul className="nav-list">
             <li>
-              <a href="#" className="nav-link">
+              <Link to="/contact" className="nav-link">
                 تواصل معنا
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="nav-link">
+              <Link to="/team" className="nav-link">
                 الفريق
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="nav-link">
+              <Link to="/events" className="nav-link">
                 الفعاليات
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="nav-link">
+              <Link to="/about" className="nav-link">
                 من نحن
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="nav-link">
+              <Link to="/graduates" className="nav-link">
                 خريجين النادي
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="nav-link nav-link-primary">
+              <Link to="/" className="nav-link nav-link-primary">
                 الرئيسية
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -45,5 +48,5 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;
 
