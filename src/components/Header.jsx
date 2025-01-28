@@ -41,7 +41,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className="logo">
-          <img src="/DIC.png" alt="Digital Innovation Club" />
+          {/* <img src="/DIC.png" alt="Digital Innovation Club" /> */}
         </div>
       </div>
     </header>
@@ -49,4 +49,3 @@ const Header = () => {
 }
 
 export default Header;
-
