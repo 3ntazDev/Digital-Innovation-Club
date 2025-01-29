@@ -3,4 +3,68 @@ body {
   font-family: "Tajawal", sans-serif;
   line-height: 1.6;
   direction: rtl;
+  overflow-x: hidden;
+}
+
+.home-container{
+  width: 100%;
+}
+
+.home-container main{
+  display: flex;
+  flex-direction: column;
+}
+
+/* the first section */
+.hero-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  position: relative;
+}
+
+.hero-section img{
+  left: -10%;
+  width: 45%;
+  height: 100%;
+  object-fit:scale-down;
+  position: absolute;
+}
+
+.hero-section h1{
+  font-size: 4.5rem;
+}
+.hero-section p{
+  font-size: 2.5rem;
+  color: #0F3F64;
+}
+
+.hero-section button{
+  width: 14%;
+  height: 6%;
+  background: #00B0F4;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-section button:hover{
+  background-color: white;
+  color: #00B0F4;
+  border: 1px solid #00B0F4;
+}
+
+
+
+
+
+
+.linearSpan{
+  background: linear-gradient(90deg, #00668E, #00B0F4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
