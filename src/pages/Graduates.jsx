@@ -7,7 +7,7 @@ const Graduates = () => {
   return (
     <div className="page">
       <div className="graduatesPage">
-        <h1>خريجين النادي</h1>
+        <h1> </h1>
         <p>تعرف على خريجينا وإنجازاتهم</p>
       </div>
       <div className="Card-Continer">
@@ -18,6 +18,7 @@ const Graduates = () => {
             specialization={graduate.specialization}
             skills={graduate.skills}
             x={graduate.x}
+            linkdin={graduate.linkdin}
           />
         ))}
       </div>

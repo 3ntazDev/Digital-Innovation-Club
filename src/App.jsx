@@ -22,7 +22,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/graduates" element={<Graduates />} />
+          <Route path="/graduates" element={<Graduates  />} />
         </Routes>
          <CustomFooter />
       </div>
