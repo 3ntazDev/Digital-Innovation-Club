@@ -8,8 +8,7 @@ header {
 
 /* this is logo */
 header > img {
-  width: 150px;
-  margin-left: 20px;
+  height: 100%;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -20,7 +19,7 @@ header > img:hover {
 
 header > nav {
   background-color: #003153;
-  border-radius: 50px ;
+  border-radius: 50px;
   padding: 0.75rem 2rem;
 }
 
@@ -29,8 +28,6 @@ nav > ul {
   justify-content: flex-start;
   gap: 2rem;
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
 .nav-link {

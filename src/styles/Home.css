@@ -123,16 +123,75 @@ body {
   margin: 0 3.5% 0 0;
 }
 
+.objectives-section button {
+  width: 29%;
+  height: 3rem;
+  background: #00b0f4;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.objectives-section button:hover {
+  background-color: white;
+  color: #00b0f4;
+  border: 1px solid #00b0f4;
+  transform: translateY(-5px);
+}
+
+/* section four */
+
+.vision-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  height: 70vh;
+}
+
+.vision-section hgroup {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.vision-section button {
+  width: 29%;
+  height: 3rem;
+  background: #00b0f4;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.vision-section button:hover {
+  background-color: white;
+  color: #00b0f4;
+  border: 1px solid #00b0f4;
+  transform: translateY(-5px);
+}
+.vision-section hgroup h2 {
+  font-size: 32px;
+}
+.vision-section hgroup p {
+  font-size: 24px;
+}
+
 /* global classes */
 .linearSpan {
   background: linear-gradient(90deg, #00668e, #00b0f4);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.secondary-button{
+.secondary-button {
   width: 14%;
   height: 6%;
-  background: #00B0F4;
+  background: #00b0f4;
   color: white;
   border: 1px solid white;
   border-radius: 15px;
@@ -141,8 +200,8 @@ body {
   transition: 0.3s;
 }
 
-.secondary-button :hover{
+.secondary-button :hover {
   background-color: white;
-  color: #00B0F4;
-  border: 1px solid #00B0F4;
+  color: #00b0f4;
+  border: 1px solid #00b0f4;
 }
