@@ -1,8 +1,14 @@
 export const GS = [
-    {
-      name: "Fahad Alghamdi",
-      specialization: "SWE",
-      skills: "JavaScript, React"
-    }
+  {
+    name: "Fahad Alghamdi",
+    specialization: "SWE",
+    skills: "JavaScript, React",
+    x:"https://x.com/SdaAcademy"
+  },
+  {
+    name: "Fahad Alghamdi",
+    specialization: "SWE",
+    skills: "JavaScript, React"
+  }
   ]
   
