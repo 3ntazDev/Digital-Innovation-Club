@@ -1,3 +1,4 @@
+import "../styles/Home.css";
 import { useEffect } from "react";
 import desginInFirstSection from "../assets/techTreeDesgin.png";
 // import AOS
