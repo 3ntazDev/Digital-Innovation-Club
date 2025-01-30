@@ -1,28 +1,31 @@
-import "../styles/Home.css";
+import { useEffect } from "react";
 import desginInFirstSection from "../assets/techTreeDesgin.png";
 // import AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
-AOS.init();
 // import img in section tow
 import imgInSecondSection from "../assets/computer_img.png";
 
 
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true }); // تحديد مدة الحركة والتأكد من تشغيلها مرة واحدة فقط
+  }, []);
+
   return (
     <div className="home-container">
       <main>
         {/* the first section */}
         <section className="hero-section">
-          <img src={desginInFirstSection} alt="" />
-          <h1>
+          <img src={desginInFirstSection} alt="" data-aos="fade-right" />
+          <h1 data-aos="fade-up">
             نادي الابتكار <span className="linearSpan">الرقمي</span>
           </h1>
-          <p>
+          <p data-aos="fade-up">
             تبي تبرمج <span className="linearSpan">صح؟</span> هذا مكانك!
           </p>
-          <button>أبدأ</button>
+          <button data-aos="zoom-in">أبدأ</button>
         </section>
         <section className="mission-section">
           <h2 data-aos="fade-up">
@@ -34,26 +37,34 @@ const Home = () => {
             التحول الرقمي.
           </p>
         </section>
+
+        {/* أهداف النادي */}
         <section className="objectives-section">
           <hgroup>
             <h2>أهداف <span className="linearSpan">نادي</span></h2>
-            <ul>
-              <li>تنظيم فعاليات ومسابقات تقنية تساهم في تنمية مواهب الأعضاء</li>
-              <li>تطوير مهارات الطلاب في مجالات التكنولوجيا الحديثة</li>
-              <li>
-                تحفيز الطلاب على الإبداع وحل المشكلات باستخدام التقنيات الرقمية
-              </li>
-              <li>
-                بناء جسور التعاون مع الشركات والمؤسسات لتعزيز فرص التدريب
-                والتوظيف
-              </li>
-            </ul>
+              <ul>
+                <li data-aos="fade-up">
+                  تنظيم فعاليات ومسابقات تقنية تساهم في تنمية مواهب الأعضاء
+                </li>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  تطوير مهارات الطلاب في مجالات التكنولوجيا الحديثة
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  تحفيز الطلاب على الإبداع وحل المشكلات باستخدام التقنيات
+                  الرقمية
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  بناء جسور التعاون مع الشركات والمؤسسات لتعزيز فرص التدريب
+                  والتوظيف
+                </li>
+              </ul>
             <button>تقدم</button>
           </hgroup>
-          <img src={imgInSecondSection} alt="" />
+          <img src={imgInSecondSection} alt=""  data-aos="zoom-in"/>
         </section>
 
-        <section className="vision-section">
+        {/* رؤية النادي */}
+        <section className="vision-section" data-aos="fade-right">
           <h2>رؤية النادي</h2>
           <div>
             <p>
@@ -61,54 +72,48 @@ const Home = () => {
               من خلال التعليم، والتجربة، والعمل الجماعي، بما يعزز مساهمتهم في
               تحقيق التحول الرقمي.
             </p>
-            <img src="" alt="" />
+            <img src="" alt="" data-aos="zoom-in" />
           </div>
         </section>
 
+        {/* قيم النادي */}
         <section className="values-section">
-          <h2>قيم النادي</h2>
+          <h2 data-aos="fade-up">قيم النادي</h2>
           <div>
             <div></div>
             <div>
               <ul>
-                <li>الابتكار: تعزيز التفكير الإبداعي في جميع الأنشطة</li>
-                <li>التعاون: بناء علاقات مثمرة بين الأعضاء والمجتمع التقني</li>
-                <li>
-                  التميز: السعي نحو تحقيق أعلى معايير الجودة في جميع المبادرات
-                </li>
-                <li>
-                  التطوير المستمر: تشجيع التعلم الدائم ومواكبة التقنيات الحديثة
-                </li>
-                <li>
-                  المسؤولية: الالتزام بالأثر الإيجابي على المجتمع داخل الجامعة
-                  وخارجها
+                <li data-aos="fade-up">الابتكار: تعزيز التفكير الإبداعي في جميع الأنشطة</li>
+                <li data-aos="fade-up" data-aos-delay="100">التعاون: بناء علاقات مثمرة بين الأعضاء والمجتمع التقني</li>
+                <li data-aos="fade-up" data-aos-delay="200">التميز: السعي نحو تحقيق أعلى معايير الجودة في جميع المبادرات</li>
+                <li data-aos="fade-up" data-aos-delay="300">التطوير المستمر: تشجيع التعلم الدائم ومواكبة التقنيات الحديثة</li>
+                <li data-aos="fade-up" data-aos-delay="400">
+                  المسؤولية: الالتزام بالأثر الإيجابي على المجتمع داخل الجامعة وخارجها
                 </li>
               </ul>
             </div>
           </div>
-          <button className="secondary-button">تقدم</button>
+          <button className="secondary-button" data-aos="zoom-in">تقدم</button>
         </section>
 
+        {/* الفعاليات */}
         <section className="activities-section">
-          <h2>الفعليات</h2>
+          <h2 data-aos="fade-up">الفعليات</h2>
           <div>
-            <h3>ما الذي تقدمه هذه الفعالية للطلاب؟</h3>
+            <h3 data-aos="fade-right">ما الذي تقدمه هذه الفعالية للطلاب؟</h3>
             <div>
               <ul>
-                <li>
-                  تطبيق المهارات التقنية باستخدام البرمجة لحل مشكلات واقعية
-                </li>
-                <li>
+                <li data-aos="fade-up">تطبيق المهارات التقنية باستخدام البرمجة لحل مشكلات واقعية</li>
+                <li data-aos="fade-up" data-aos-delay="100">
                   تعزيز العمل الجماعي وتطوير مهارات التعاون وحل المشكلات عبر فرق
                 </li>
-                <li>
-                  التعلم والتطوير: اكتساب خبرات عملية لدعم المشاريع البرمجية
-                  المستقبلية
+                <li data-aos="fade-up" data-aos-delay="200">
+                  التعلم والتطوير: اكتساب خبرات عملية لدعم المشاريع البرمجية المستقبلية
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="300">
                   التفاعل مع الخبراء للحصول على نصائح وملاحظات لتحسين المهارات
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="400">
                   فرص وجوائز مميزة للفوز بجوائز أو تدريب لدعم في المسيرة الذاتية
                 </li>
               </ul>
