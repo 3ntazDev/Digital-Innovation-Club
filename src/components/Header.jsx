@@ -1,18 +1,25 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import logo from "../assets/logo.png";
 import "../styles/Header.css";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header>
+      <img src={logo} alt="Digital Innovation Club logo" />
       <nav>
-        <ul>
+        <ul className={isOpen ? "active" : ""}>
           <li>
             <Link to="/" className="nav-link nav-link-primary">
               الرئيسية
             </Link>
           </li>
-
           <li>
             <Link to="/graduates" className="nav-link">
               خريجين النادي
@@ -39,8 +46,12 @@ const Header = () => {
             </Link>
           </li>
         </ul>
+        <div className="hamburger" onClick={toggleMenu}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </nav>
-      <img src={logo} alt="Digital Innovation Club logo" />
     </header>
   );
 };

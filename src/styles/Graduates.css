@@ -2,28 +2,34 @@
 .page {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 200px;
+    padding: 50px 20px; 
     text-align: center;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h1 {
+.graduatesPage h1 {
     font-size: 2.5em;
     color: #333;
     margin-bottom: 10px;
 }
 
-p {
+.graduatesPage p {
     font-size: 1.2em;
-    color: #666;
+    color: #d21d1d;
     margin-bottom: 30px;
 }
 
 .Card-Continer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card {
@@ -36,15 +42,17 @@ p {
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
 }
 
-.card h2 {
-    font-size: 1.5em;
-    color: #333;
+@media (max-width: 768px) {
+    .Card-Continer {
+        grid-template-columns: repeat(2, 1fr); 
+    }
 }
 
-.card p {
-    font-size: 1em;
-    color: #666;
+@media (max-width: 480px) {
+    .Card-Continer {
+        grid-template-columns: 1fr; 
+    }
 }

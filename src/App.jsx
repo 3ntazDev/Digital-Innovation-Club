@@ -6,7 +6,10 @@ import Events from "./pages/Events"
 import Team from "./pages/Team"
 import Contact from "./pages/Contact"
 import Graduates from "./pages/Graduates"
+import CustomFooter from "./components/Footer"
 import "./App.css"
+import "aos/dist/aos.css";
+
 
 function App() {
   return (
@@ -21,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/graduates" element={<Graduates />} />
         </Routes>
+         <CustomFooter />
       </div>
     </Router>
   )
