@@ -1,5 +1,14 @@
 import "../styles/Home.css";
 import desginInFirstSection from "../assets/techTreeDesgin.png";
+// import AOS
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+// import img in section tow
+import imgInSecondSection from "../assets/computer_img.png";
+
+
+
 const Home = () => {
   return (
     <div className="home-container">
@@ -16,34 +25,32 @@ const Home = () => {
           <button>أبدأ</button>
         </section>
         <section className="mission-section">
-          <h2>رسالة النادي</h2>
-          <p>
+          <h2 data-aos="fade-up">
+            رسالة <span className="linearSpan">النادي</span>
+          </h2>
+          <p data-aos="fade-up">
             توفير بيئة داعمة للطلاب تمكنهم من اكتشاف قدراتهم التقنية وتطويرها من
             خلال التعليم، والتجربة، والعمل الجماعي، بما يعزز مساهمتهم في تحقيق
             التحول الرقمي.
           </p>
         </section>
         <section className="objectives-section">
-          <h2>أهداف نادي</h2>
-          <div>
-            <div>
-              <ul>
-                <li>
-                  تنظيم فعاليات ومسابقات تقنية تساهم في تنمية مواهب الأعضاء
-                </li>
-                <li>تطوير مهارات الطلاب في مجالات التكنولوجيا الحديثة</li>
-                <li>
-                  تحفيز الطلاب على الإبداع وحل المشكلات باستخدام التقنيات
-                  الرقمية
-                </li>
-                <li>
-                  بناء جسور التعاون مع الشركات والمؤسسات لتعزيز فرص التدريب
-                  والتوظيف
-                </li>
-              </ul>
-            </div>
-            <img src="" alt="" />
-          </div>
+          <hgroup>
+            <h2>أهداف <span className="linearSpan">نادي</span></h2>
+            <ul>
+              <li>تنظيم فعاليات ومسابقات تقنية تساهم في تنمية مواهب الأعضاء</li>
+              <li>تطوير مهارات الطلاب في مجالات التكنولوجيا الحديثة</li>
+              <li>
+                تحفيز الطلاب على الإبداع وحل المشكلات باستخدام التقنيات الرقمية
+              </li>
+              <li>
+                بناء جسور التعاون مع الشركات والمؤسسات لتعزيز فرص التدريب
+                والتوظيف
+              </li>
+            </ul>
+            <button>تقدم</button>
+          </hgroup>
+          <img src={imgInSecondSection} alt="" />
         </section>
 
         <section className="vision-section">
