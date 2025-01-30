@@ -6,62 +6,129 @@ body {
   overflow-x: hidden;
 }
 
-.home-container{
+.home-container {
   width: 100%;
+  color: #000;
 }
 
-.home-container main{
+.home-container main {
   display: flex;
   flex-direction: column;
 }
 
 /* the first section */
-.hero-section{
+.hero-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* 69 is not flexible we have to chanage that */
+  gap: 69px;
   height: 80vh;
   position: relative;
 }
 
-.hero-section img{
+.hero-section img {
   left: -10%;
   width: 45%;
   height: 100%;
-  object-fit:scale-down;
+  object-fit: scale-down;
   position: absolute;
+  pointer-events: none;
 }
 
-.hero-section h1{
+.hero-section h1 {
   font-size: 4.5rem;
-}
-.hero-section p{
-  font-size: 2.5rem;
-  color: #0F3F64;
+  /* i add 0 margin here becusae there is conflict between css files */
+  margin: 0px;
 }
 
-.hero-section button{
+.hero-section p {
+  font-size: 2.5rem;
+  color: #0f3f64;
+  /* i add 0 margin here becusae there is conflict between css files */
+  margin: 0;
+}
+
+.hero-section button {
   width: 14%;
   height: 6%;
-  background: #00B0F4;
+  background: #00b0f4;
   color: white;
   border: 1px solid white;
   border-radius: 15px;
   font-size: 1.25rem;
   cursor: pointer;
   transition: 0.3s;
+  /* i add 0 margin here becusae there is conflict between css files */
+  margin: 0;
 }
 
-.hero-section button:hover{
+.hero-section button:hover {
   background-color: white;
-  color: #00B0F4;
-  border: 1px solid #00B0F4;
+  color: #00b0f4;
+  border: 1px solid #00b0f4;
 }
 
+/* section tow "mission-section" */
 
+.mission-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 40vh;
+}
 
+.mission-section h2 {
+  font-size: 3rem;
+  font-weight: 500;
 
+  /* i add 0 margin here becusae there is conflict between css files */
+}
 
+.mission-section p {
+  text-align: center;
+  font-size: 2rem;
+  color: #0f3f64;
+  /* i add 0 margin here becusae there is conflict between css files */
+  margin: 0;
+}
+
+.objectives-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70vh;
+}
+
+.objectives-section hgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.objectives-section h2 {
+  font-size: 2rem;
+}
+
+.objectives-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.objectives-section ul li {
+  font-size: 1.5rem;
+  color: #0f3f64;
+  margin: 0 3.5% 0 0;
+}
+
+/* global classes */
+.linearSpan {
+  background: linear-gradient(90deg, #00668e, #00b0f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .secondary-button{
   width: 14%;
   height: 6%;

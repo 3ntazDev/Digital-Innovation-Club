@@ -1,8 +1,12 @@
 import { useEffect } from "react";
-import AOS from "aos";
-import "../styles/Home.css";
-
 import desginInFirstSection from "../assets/techTreeDesgin.png";
+// import AOS
+import AOS from "aos";
+import "aos/dist/aos.css";
+// import img in section tow
+import imgInSecondSection from "../assets/computer_img.png";
+
+
 
 const Home = () => {
   useEffect(() => {
@@ -23,11 +27,11 @@ const Home = () => {
           </p>
           <button data-aos="zoom-in">أبدأ</button>
         </section>
-
-        {/* رسالة النادي */}
-        <section className="mission-section" data-aos="fade-left">
-          <h2>رسالة النادي</h2>
-          <p>
+        <section className="mission-section">
+          <h2 data-aos="fade-up">
+            رسالة <span className="linearSpan">النادي</span>
+          </h2>
+          <p data-aos="fade-up">
             توفير بيئة داعمة للطلاب تمكنهم من اكتشاف قدراتهم التقنية وتطويرها من
             خلال التعليم، والتجربة، والعمل الجماعي، بما يعزز مساهمتهم في تحقيق
             التحول الرقمي.
@@ -36,9 +40,8 @@ const Home = () => {
 
         {/* أهداف النادي */}
         <section className="objectives-section">
-          <h2 data-aos="fade-up">أهداف النادي</h2>
-          <div>
-            <div>
+          <hgroup>
+            <h2>أهداف <span className="linearSpan">نادي</span></h2>
               <ul>
                 <li data-aos="fade-up">
                   تنظيم فعاليات ومسابقات تقنية تساهم في تنمية مواهب الأعضاء
@@ -55,9 +58,9 @@ const Home = () => {
                   والتوظيف
                 </li>
               </ul>
-            </div>
-            <img src="" alt="" data-aos="zoom-in" />
-          </div>
+            <button>تقدم</button>
+          </hgroup>
+          <img src={imgInSecondSection} alt=""  data-aos="zoom-in"/>
         </section>
 
         {/* رؤية النادي */}
