@@ -11,8 +11,6 @@ header {
 header > img {
   width: 150px;
   margin-right: 20px; /* تعديل الهامش ليكون على اليمين بدلاً من اليسار */
-  transition: 0.3s;
-  cursor: pointer;
 }
 
 header > img:hover {
@@ -30,8 +28,6 @@ nav > ul {
   justify-content: flex-start;
   gap: 2rem;
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
 .nav-link {
