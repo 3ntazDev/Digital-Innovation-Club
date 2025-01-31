@@ -34,6 +34,7 @@ body {
   object-fit: scale-down;
   position: absolute;
   pointer-events: none;
+  overflow: hidden;
 }
 
 .hero-section h1 {
@@ -83,47 +84,52 @@ body {
 .mission-section h2 {
   font-size: 3rem;
   font-weight: 500;
-
-  /* i add 0 margin here becusae there is conflict between css files */
 }
 
 .mission-section p {
   text-align: center;
   font-size: 2rem;
   color: #0f3f64;
-  /* i add 0 margin here becusae there is conflict between css files */
-  margin: 0;
 }
 
-.objectives-section {
+/* section three and five */
+/* i add section five with three because its same stractur and element */
+
+.objectives-section,
+.values-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 70vh;
 }
 
-.objectives-section hgroup {
+.objectives-section hgroup,
+.values-section hgroup {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
 
-.objectives-section h2 {
+.objectives-section h2,
+.values-section h2 {
   font-size: 2rem;
 }
 
-.objectives-section ul {
+.objectives-section ul,
+.values-section ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.objectives-section ul li {
+.objectives-section ul li,
+.values-section ul li {
   font-size: 1.5rem;
   color: #0f3f64;
   margin: 0 3.5% 0 0;
 }
 
-.objectives-section button {
+.objectives-section button,
+.values-section button {
   width: 29%;
   height: 3rem;
   background: #00b0f4;
@@ -134,7 +140,8 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-.objectives-section button:hover {
+.objectives-section button:hover,
+.values-section button:hover {
   background-color: white;
   color: #00b0f4;
   border: 1px solid #00b0f4;
@@ -161,17 +168,17 @@ body {
 .vision-section button {
   width: 29%;
   height: 3rem;
-  background: #00b0f4;
-  color: white;
-  border: 1px solid white;
+  background: white;
+  color: #00b0f4;
+  border: 1px solid #00b0f4;
   border-radius: 15px;
   font-size: 1.25rem;
   cursor: pointer;
   transition: 0.3s;
 }
 .vision-section button:hover {
-  background-color: white;
-  color: #00b0f4;
+  background-color: #00b0f4;
+  color: white;
   border: 1px solid #00b0f4;
   transform: translateY(-5px);
 }
@@ -181,6 +188,83 @@ body {
 .vision-section hgroup p {
   font-size: 24px;
 }
+
+/* six section activities section */
+
+.activities-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 70vh;
+}
+
+.activities-section h2 {
+  font-size: 3rem;
+}
+
+.activities-section div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  background: #110e39;
+  border-radius: 2rem;
+  color: aliceblue;
+  padding: 50px;
+
+}
+.activities-section div img {
+  height: 90%;
+  pointer-events: none;
+}
+
+
+.activities-section div h3 {
+  font-size: 2rem;
+  position: relative;
+  right: 30px;
+}
+
+.activities-section div h3::after{
+  content: "};";
+  opacity: 0.3;
+  font-size: 6rem;
+  position: absolute;
+  left: -55px;
+  bottom: -45px;
+}
+
+.activities-section div h3::before{
+  content: "{";
+  opacity: 0.3;
+  font-size: 6rem;
+  position: absolute;
+  right: -30px;
+  top: -55px;
+}
+
+
+.activities-section hgroup {
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 10%;
+  flex-direction: column;
+}
+.activities-section div ul {
+  padding: 0 25px;
+}
+
+.activities-section div li {
+  font-size: 24px;
+}
+
+
+
 
 /* global classes */
 .linearSpan {
@@ -200,7 +284,7 @@ body {
   transition: 0.3s;
 }
 
-.secondary-button :hover {
+.secondary-button:hover {
   background-color: white;
   color: #00b0f4;
   border: 1px solid #00b0f4;
