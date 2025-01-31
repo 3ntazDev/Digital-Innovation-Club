@@ -1,26 +1,49 @@
 .footer {
-    position: relative;
     width: 100%;
-    height: 50px; 
-    background-color: #333; 
-    color: white; 
-    text-align: center; 
-    padding: 10px 0; 
-  }
-  
-  .footer p {
+    background-color: #003153; /* لون الخلفية */
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* زيادة البادينغ */
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
     color: rgb(223, 222, 222);
     font-size: 0.875rem;
     transition: 0.3s;
-  }
-  
-  .footer p:hover {
-    color: #fff;
-  }
-  .footer {
-    position: relative;
-    margin-top: 20px; /* لتحديد المسافة بين الفوتر والمحتوى */
-    width: 100%;
-  }
-  
+    margin: 5px 0;
+}
 
+.footer p:hover {
+    color: #fff;
+}
+
+.footer .social-media {
+    margin-top: 10px;
+}
+
+.footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer .social-media a:hover {
+    color: #646cff;
+}
+
+.footer .social-media img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+    transition: filter 0.3s;
+}
+
+.footer .social-media img:hover {
+    filter: invert(50%);
+}

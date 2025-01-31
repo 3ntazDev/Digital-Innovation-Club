@@ -122,7 +122,17 @@ body {
   color: #0f3f64;
   margin: 0 3.5% 0 0;
 }
-
+.objectives-section button {
+  width: 14%;
+  height: 6%;
+  background: #00b0f4;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
 /* global classes */
 .linearSpan {
   background: linear-gradient(90deg, #00668e, #00b0f4);
