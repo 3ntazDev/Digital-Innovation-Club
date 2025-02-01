@@ -19,6 +19,7 @@ const Graduates = () => {
             skills={graduate.skills}
             x={graduate.x}
             linkdin={graduate.linkdin}
+            github={graduate.github}
           />
         ))}
       </div>

@@ -1,0 +1,38 @@
+/* الصفحة الرئيسية تبدأ من أسفل navbar */
+.page {
+  margin-top: 80px; /* ارتفاع navbar بحيث يبدأ المحتوى بعده */
+  width: 100%;
+  padding: 20px; /* هامش داخلي */
+  text-align: left;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* النص محاذي لليسار */
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: 1fr; /* عمود واحد لكل صف */
+  gap: 40px; /* زيادة المسافة بين الكروت */
+  padding: 20px 0; /* رفع الحشو ليكون أعلى وأسفل */
+}
+
+/* الكروت داخل الفريق */
+.card {
+  height: 350px; /* تحديد ارتفاع الكارت */
+  width: 250px; /* تحديد عرض الكارت */
+  background-color: #00aaff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* عند العرض على الأجهزة الصغيرة */
+@media (max-width: 768px) {
+  .team-container {
+    grid-template-columns: 1fr; /* عمود واحد للأجهزة الصغيرة */
+  }
+}

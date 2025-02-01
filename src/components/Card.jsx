@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import linkedinIcon from '../assets/linkedin_2931621.png';
+import githubIcon from '../assets/icons8-github-64.png'; // تأكد من أن المسار صحيح
 
 const Card = (Props) => {
   return (
@@ -19,18 +20,23 @@ const Card = (Props) => {
               )}
               {Props.linkdin && (
                 <a href={Props.linkdin} target="_blank" rel="noopener noreferrer">
-<img src={linkedinIcon} alt="LinkedIn Icon" className="svg" />
-</a>
+                  <img src={linkedinIcon} alt="LinkedIn Icon" className="svg" />
+                </a>
+              )}
+              {Props.github && (
+                <a href={Props.github} target="_blank" rel="noopener noreferrer">
+                  <img src={githubIcon} alt="GitHub Icon" className="svg" />
+                </a>
               )}
             </div>
           </div>
         </div>
         <div className="bottom-section">
-        <span className="title">{Props.name}</span>
-        <span className="title">{Props.specialization}</span>
-        <div className="row row1">
+          <span className="title">{Props.name}</span>
+          <span className="title">{Props.specialization}</span>
+          <div className="row row1">
             <div className="item">
-            <span className="big-text">{Props.skills}</span>
+              <span className="big-text">{Props.skills}</span>
               <span className="big-text"></span>
             </div>
           </div>
@@ -38,7 +44,8 @@ const Card = (Props) => {
       </div>
     </StyledWrapper>
   );
-}
+};
+
 
 const StyledWrapper = styled.div`
   .card {
@@ -64,6 +71,9 @@ const StyledWrapper = styled.div`
     position: relative;
   }
 
+
+
+  
   .card .top-section .border {
     border-bottom-right-radius: 10px;
     height: 30px;
