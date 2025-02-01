@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <main>
-        {/* the first section */}
+        {/* the hero section */}
         <section className="hero-section">
           <img src={desginInFirstSection} alt="" data-aos="fade-right" />
           <h1 data-aos="fade-up">
@@ -29,6 +29,8 @@ const Home = () => {
           </p>
           <button data-aos="zoom-in">أبدأ</button>
         </section>
+        
+        {/* رسالة النادي*/}
         <section className="mission-section">
           <h2 data-aos="fade-up">
             رسالة <span className="linearSpan">النادي</span>
@@ -141,8 +143,23 @@ const Home = () => {
             <img src={functionImage} alt="" />
           </div>
         </section>
+              {/* this is a glows */}
+      <div className="glows">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
       </main>
-      
     </div>
   );
 };

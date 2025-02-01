@@ -1,6 +1,6 @@
 /* reast all Default values */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,11 +25,14 @@ body {
   min-height: 100vh;
   background: #fff;
   padding: 0 100px;
+
+  /* the glow in the Background */
+
   background: url("./assets/binary.jpg") repeat;
+  background-color: rgba(255, 255, 255, 0.75); /* الخلفية البيضاء الشفافة */
   background-size: 60%;
-  /* to change transparency */
-  background-color: rgba(255, 255, 255, 0.75);
   background-blend-mode: overlay;
+  /* to change transparency of binary*/
 }
 
 @media (prefers-color-scheme: light) {
