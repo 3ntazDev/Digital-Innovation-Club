@@ -128,6 +128,144 @@ body {
   margin: 0 3.5% 0 0;
 }
 
+.objectives-section button,
+.values-section button {
+  width: 29%;
+  height: 3rem;
+  background: #00b0f4;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.objectives-section button:hover,
+.values-section button:hover {
+  background-color: white;
+  color: #00b0f4;
+  border: 1px solid #00b0f4;
+  transform: translateY(-5px);
+}
+
+/* section four */
+
+.vision-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  height: 70vh;
+}
+
+.vision-section hgroup {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.vision-section button {
+  width: 29%;
+  height: 3rem;
+  background: white;
+  color: #00b0f4;
+  border: 1px solid #00b0f4;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.vision-section button:hover {
+  background-color: #00b0f4;
+  color: white;
+  border: 1px solid #00b0f4;
+  transform: translateY(-5px);
+}
+.vision-section hgroup h2 {
+  font-size: 32px;
+}
+.vision-section hgroup p {
+  font-size: 24px;
+}
+
+/* six section activities section */
+
+.activities-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 70vh;
+}
+
+.activities-section h2 {
+  font-size: 3rem;
+}
+
+.activities-section div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  background: #110e39;
+  border-radius: 2rem;
+  color: aliceblue;
+  padding: 50px;
+
+}
+.activities-section div img {
+  height: 90%;
+  pointer-events: none;
+}
+
+
+.activities-section div h3 {
+  font-size: 2rem;
+  position: relative;
+  right: 30px;
+}
+
+.activities-section div h3::after{
+  content: "};";
+  opacity: 0.3;
+  font-size: 6rem;
+  position: absolute;
+  left: -55px;
+  bottom: -45px;
+}
+
+.activities-section div h3::before{
+  content: "{";
+  opacity: 0.3;
+  font-size: 6rem;
+  position: absolute;
+  right: -30px;
+  top: -55px;
+}
+
+
+.activities-section hgroup {
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 10%;
+  flex-direction: column;
+}
+.activities-section div ul {
+  padding: 0 25px;
+}
+
+.activities-section div li {
+  font-size: 24px;
+}
+
+
+
+
 /* global classes */
 .linearSpan {
   background: linear-gradient(90deg, #00668e, #00b0f4);
