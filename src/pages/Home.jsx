@@ -22,7 +22,7 @@ const Home = () => {
         <section className="hero-section">
           <img src={desginInFirstSection} alt="" data-aos="fade-right" />
           <h1 data-aos="fade-up">
-            نادي الابتكار <span className="linearSpan">الرقمي</span>
+            نادي اليييييييييييييابتكار <span className="linearSpan">الرقمي</span>
           </h1>
           <p data-aos="fade-up">
             تبي تبتكر <span className="linearSpan">صح؟</span> هذا مكانك!
