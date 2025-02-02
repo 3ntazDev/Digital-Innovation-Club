@@ -28,7 +28,7 @@ body {
 
   /* the glow in the Background */
 
-  background: url("./assets/binary.jpg") repeat;
+  background: url("./assets/binary.png") repeat;
   background-color: rgba(255, 255, 255, 0.75); /* الخلفية البيضاء الشفافة */
   background-size: 60%;
   background-blend-mode: overlay;
