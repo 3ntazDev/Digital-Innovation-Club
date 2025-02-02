@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap");
+
 body {
   font-family: "Tajawal", sans-serif;
   line-height: 1.6;
   direction: rtl;
   overflow-x: hidden;
+  position: relative;
+}
+
+#root{
+  position: relative;
+
 }
 
 .home-container {
@@ -298,18 +305,12 @@ section a {
 
 /* glows */
 
-.glows {
+.home-container > main > div{
   position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100%;
-  
-}
-.glows div {
-  width: 1000px;
-  height: 1000px;
+  width: 750px;
+  height: 750px;
   border-radius:300px;
-  background: radial-gradient(circle, #00aff463, transparent, transparent);
+  background: radial-gradient(circle, #00aff463 , transparent 70%);
   position: absolute;
   z-index: 1;
   bottom: 0;
@@ -317,76 +318,75 @@ section a {
 }
 
 /* section one */
-.glows div:nth-child(1) {
-  top: 3%;
-  left: -25%;
-  background: radial-gradient(circle, #0058A083, transparent, transparent);
+.home-container > main > div:nth-child(7) {
+  top: 2%;
+  left: -20%;
+  background: radial-gradient(circle, #0058A083, transparent 70%);
 }
-.glows div:nth-child(2) {
-  top: -50%;
-  right: -40%;
+.home-container > main > div:nth-child(8) {
+  top: -10%;
+  right: -20%;
 }
 
 /* section tow */
-.glows div:nth-child(3) {
-  bottom: -45%; 
-  right: -40%;
-  background: radial-gradient(circle, #0058a083, transparent, transparent);
+.home-container > main > div:nth-child(9) {
+  top: 15%; 
+  right: -30%;
+  background: radial-gradient(circle, #0058a083, transparent 70%);
 }
 
-.glows div:nth-child(4) {
-  bottom: -65%;
+.home-container > main > div:nth-child(10) {
+  top: 20%; 
   left: -30%;
 }
 
 /* section three */
-.glows div:nth-child(5) {
-  bottom: -140%;
-  right: -40%;
-  background: radial-gradient(circle, #00BDC183, transparent, transparent);
+.home-container > main > div:nth-child(11) {
+  bottom: 45%;
+  right: -23%;
+  background: radial-gradient(circle, #00BDC183,  transparent 70%);
 }
 
-.glows div:nth-child(6) {
-  bottom: -145%;
-  left: -30%;
-  background: radial-gradient(circle, #4285F483, transparent, transparent);
+.home-container > main > div:nth-child(12) {
+  bottom: 43%;
+  left: -23%;
+  background: radial-gradient(circle, #4285F483, transparent 70%);
 }
 
 /* section four */
-.glows div:nth-child(7) {
-  bottom: -190%;
-  right: -40%;
-  background: radial-gradient(circle, #0058A083, transparent, transparent);
+.home-container > main > div:nth-child(13) {
+  bottom: 35%;
+  right: -2%;
+  background: radial-gradient(circle, #0058A083, transparent 70%);
 }
 
-.glows div:nth-child(8) {
-  bottom: -210%;
-  left: -25%;
+.home-container > main > div:nth-child(14) {
+  bottom: 20%;
+  left: -5%;
 }
 
 /* section five */
-.glows div:nth-child(9) {
-  bottom: -265%;
-  right: -40%;
-  background: radial-gradient(circle, #00BDC183, transparent, transparent);
+.home-container > main > div:nth-child(15) {
+  bottom: 20%;
+  right: -25%;
+  background: radial-gradient(circle, #00BDC183, transparent 70%);
 }
 
-.glows div:nth-child(10) {
-  bottom: -275%;
-  left: -30%;
-  background: radial-gradient(circle, #4285F483, transparent, transparent);
-}
+.home-container > main > div:nth-child(16) {
+  bottom: 10%;
+  left: -20%;
+  background: radial-gradient(circle, #4285F483, transparent 70%);
+} 
 
 /* section six */
-.glows div:nth-child(11) {
-  max-height: 500px;
-  bottom: -315%;
-  right: -40%;
-  background: radial-gradient(circle, #0058A083, transparent, transparent);
+.home-container > main > div:nth-child(17) {
+  bottom: 0%;
+  right: -20%;
+  background: radial-gradient(circle, #0058A083, transparent 70%);
 }
 
-.glows div:nth-child(12) {
-  max-height: 500px;
-  bottom: -315%;
-  left: -30%;
+.home-container > main > div:nth-child(18) {
+  background: radial-gradient(circle, #0058A083, transparent 70%);
+  bottom: 0%;
+  left: 10%;
 }

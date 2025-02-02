@@ -10,9 +10,14 @@ import errImg from "../assets/errImg.png";
 import visionImg from "../assets/visionImg.png";
 import functionImage from "../assets/functionImage.png";
 
+
+
+AOS.init({ duration: 1000 }); // تحديد مدة الحركة والتأكد من تشغيلها مرة واحدة فقط
+
+
 const Home = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true }); // تحديد مدة الحركة والتأكد من تشغيلها مرة واحدة فقط
+    scrollTo(0,scrollY);
   }, []);
 
   return (
@@ -87,7 +92,7 @@ const Home = () => {
               <button>تقدم</button>
             </a>
           </hgroup>
-          <img src={errImg} alt="" data-aos="zoom-in" />
+          <img src={errImg} alt="" data-aos="fade-left" />
         </section>
 
         {/* قيم النادي */}
@@ -118,7 +123,7 @@ const Home = () => {
               <button>تقدم</button>
             </a>
           </hgroup>
-          <img src={visionImg} alt="" />
+          <img data-aos="fade-right" src={visionImg} alt="" />
         </section>
 
         {/* الفعاليات */}
@@ -152,7 +157,6 @@ const Home = () => {
           </div>
         </section>
         {/* this is a glows */}
-        <div className="glows">
           <div></div>
           <div></div>
           <div></div>
@@ -165,7 +169,6 @@ const Home = () => {
           <div></div>
           <div></div>
           <div></div>
-        </div>
       </main>
     </div>
   );
