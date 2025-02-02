@@ -1,85 +1,96 @@
-/* Card.css */
+/* تصميم البطاقة */
 .card {
-  background: #003153; /* الأزرق الفاخر */
+  background: linear-gradient(145deg, #002b45, #003b60); /* تدرج أزرق فاخر */
   border-radius: 15px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5), 
-              -5px -5px 15px rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  width: 320px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4), 
+              -5px -5px 15px rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  width: 350px;
   color: white;
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6),
-              -10px -10px 20px rgba(255, 255, 255, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
+              -10px -10px 20px rgba(255, 255, 255, 0.1);
 }
 
+/* القسم العلوي */
 .top-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
+/* الأيقونات */
 .icons {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 15px;
 }
 
+/* أيقونات التواصل الاجتماعي */
 .social-media a {
   display: inline-block;
-  padding: 8px;
+  padding: 10px;
   border-radius: 50%;
-  background: #004b80; /* لون أزرق أفتح شوي للتباين */
-  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-              inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(145deg, #004b80, #005fa3);
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.5),
+              inset -4px -4px 8px rgba(255, 255, 255, 0.08);
   transition: all 0.3s ease-in-out;
 }
 
 .social-media a:hover {
-  background: #005fa3; /* لون أفتح عند التحويم */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  background: linear-gradient(145deg, #005fa3, #0070c0);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
+/* الأيقونات */
 .social-media .svg {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   filter: brightness(0) invert(1);
 }
 
+/* القسم السفلي */
 .bottom-section {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
+/* عنوان البطاقة */
 .title {
   display: block;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: bold;
   margin: 5px 0;
 }
 
+/* الصفوف */
 .row {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
+/* العناصر داخل البطاقة */
 .item {
-  background: #004b80; /* لون متناسق مع الخلفية */
+  background: linear-gradient(145deg, #003b60, #004b80);
   border-radius: 10px;
-  padding: 10px;
-  width: 80%;
+  padding: 12px;
+  width: 85%;
   box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.6),
               inset -3px -3px 8px rgba(255, 255, 255, 0.1);
+  text-align: center;
 }
 
+/* النصوص داخل العناصر */
 .big-text {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   color: #ddd;
 }

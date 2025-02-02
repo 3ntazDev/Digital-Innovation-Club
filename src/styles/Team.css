@@ -1,38 +1,120 @@
-/* الصفحة الرئيسية تبدأ من أسفل navbar */
-.page {
-  margin-top: 80px; /* ارتفاع navbar بحيث يبدأ المحتوى بعده */
-  width: 100%;
-  padding: 20px; /* هامش داخلي */
-  text-align: left;
-  font-family: Arial, sans-serif;
+/* استيراد خط أنيق */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #003153; /* الأزرق الداكن الأساسي */
+  --secondary-color: #004b74; /* أزرق أكثر إشراقًا */
+  --text-color: #f5f5f5; /* أبيض ناعم */
+  --background-color: #021a30; /* خلفية داكنة جدًا */
+  --card-background: #022c48; /* لون أزرق غامق للكروت */
+  --border-radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+/* الحاوية الرئيسية */
+.team-section {
+  padding: 50px 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* عنوان الفريق */
+.team-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.team-subtitle {
+  font-size: 18px;
+  color: var(--text-color);
+  margin-bottom: 40px;
+}
+
+/* تصميم اللجنة */
+.committee {
+  background: var(--card-background);
+  padding: 25px;
+  margin: 25px auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  transition: 0.3s;
+}
+
+.committee:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* عنوان اللجنة */
+.committee-title {
+  background: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 18px;
+  border-radius: var(--border-radius);
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* أعضاء الفريق */
+.members {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* النص محاذي لليسار */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.team-container {
-  display: grid;
-  grid-template-columns: 1fr; /* عمود واحد لكل صف */
-  gap: 40px; /* زيادة المسافة بين الكروت */
-  padding: 20px 0; /* رفع الحشو ليكون أعلى وأسفل */
-}
-
-/* الكروت داخل الفريق */
-.card {
-  height: 350px; /* تحديد ارتفاع الكارت */
-  width: 250px; /* تحديد عرض الكارت */
-  background-color: #00aaff;
-  border-radius: 10px;
+/* كرت العضو */
+.member {
+  background: var(--secondary-color);
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  text-align: center;
+  width: 160px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* عند العرض على الأجهزة الصغيرة */
-@media (max-width: 768px) {
-  .team-container {
-    grid-template-columns: 1fr; /* عمود واحد للأجهزة الصغيرة */
-  }
+.member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* صورة العضو (رمزية فقط) */
+.member-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ffffff33;
+  margin-bottom: 12px;
+}
+
+/* اسم العضو */
+.member-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+/* دور العضو */
+.member-role {
+  font-size: 15px;
+  color: #ddd;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }

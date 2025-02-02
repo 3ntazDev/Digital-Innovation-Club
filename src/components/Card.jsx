@@ -1,6 +1,7 @@
+import styled from 'styled-components';
 import linkedinIcon from '../assets/linkedin_2931621.png';
 import githubIcon from '../assets/icons8-github-64.png'; // تأكد من أن المسار صحيح
-import "../styles/Card.css";
+
 const Card = (Props) => {
   return (
       <div className="card">

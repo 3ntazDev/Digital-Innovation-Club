@@ -1,27 +1,31 @@
-import Card from '../components/Card'; // تأكد من أن المسار صحيح
-import { teamMembers } from '../Team'; // تأكد من أن المسار صحيح
-import '../styles/Team.css'; // تأكد من أن لديك ملف CSS لتنسيق الصفحة
+import { teamData } from "../Data/Team.js";
+import "../styles/Team.css"; // ملف التنسيقات
 
 const Team = () => {
   return (
-    <div className="page">
-      <h1>الفريق</h1>
-      <p>تعرف على فريقنا المتميز</p>
-      <div className="team-container">
-        {teamMembers.map((member, index) => (
-          <Card
-            key={index}
-            name={member.name}
-            specialization={member.specialization}
-            skills={member.skills}
-            x={member.x}
-            linkdin={member.linkdin}
-            github={member.github}
-          />
-        ))}
-      </div>
-    </div> 
+    <div className="team-section">
+      <h1 className="team-title">الفريق</h1>
+      <p className="team-subtitle">تعرف على فريقنا المتميز</p>
+
+      {teamData.map((committee, index) => (
+        <div key={index} className="committee">
+          {committee.title !== "قادة الفريق" && (
+            <div className="committee-title">{committee.title}</div>
+          )}
+
+          <div className="members">
+            {committee.members.map((member, idx) => (
+              <div key={idx} className="member">
+                
+                <div className="member-name">{member.name}</div>
+                <div className="member-role">{member.role}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
   );
 };
 
-export default Team;  
+export default Team;
