@@ -1,0 +1,72 @@
+.about-container {
+    text-align: center;
+    font-family: "Tajawal", sans-serif;
+    padding: 350px;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #004b80;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  .subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px 0 20px;
+    color: #004b80;
+  }
+  
+  .about-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .about-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .about-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .about-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #004b80;
+  }
+  
+  .about-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .about-message {
+    margin-top: 60px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .about-message h2 {
+    font-size: 28px;
+    color: #004b80;
+    margin-top: 10px;
+  }
+  
