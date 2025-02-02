@@ -357,12 +357,13 @@ section a {
 .home-container > main > div:nth-child(13) {
   bottom: 35%;
   right: -2%;
-  background: radial-gradient(circle, #0058A083, transparent 70%);
+  background: radial-gradient(circle, #0058a02f, transparent 70%);
 }
 
 .home-container > main > div:nth-child(14) {
   bottom: 20%;
   left: -5%;
+  background: radial-gradient(circle, #00aff424 , transparent 70%);
 }
 
 /* section five */
@@ -382,7 +383,7 @@ section a {
 .home-container > main > div:nth-child(17) {
   bottom: 0%;
   right: -20%;
-  background: radial-gradient(circle, #0058A083, transparent 70%);
+  background: radial-gradient(circle, #0058a036, transparent 70%);
 }
 
 .home-container > main > div:nth-child(18) {
