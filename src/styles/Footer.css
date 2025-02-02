@@ -1,49 +1,70 @@
 .footer {
-    width: 100%;
-    background-color: #003153; /* لون الخلفية */
+    background-color: #002a4d;
     color: white;
     text-align: center;
-    padding: 20px 0; /* زيادة البادينغ */
-    position: relative;
-    margin-top: 20px;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+  }
+  
+  .footer-left,
+  .footer-right {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-
-.footer p {
-    color: rgb(223, 222, 222);
-    font-size: 0.875rem;
-    transition: 0.3s;
-    margin: 5px 0;
-}
-
-.footer p:hover {
-    color: #fff;
-}
-
-.footer .social-media {
-    margin-top: 10px;
-}
-
-.footer .social-media a {
+  }
+  
+  .footer-logo {
+    width: 120px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-center {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .footer-links {
+    display: flex;
+    gap: 30px; 
+  }
+  
+  .footer-links a {
     color: white;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-.footer .social-media a:hover {
-    color: #646cff;
-}
-
-.footer .social-media img {
-    width: 24px;
-    height: 24px;
-    filter: invert(100%);
-    transition: filter 0.3s;
-}
-
-.footer .social-media img:hover {
-    filter: invert(50%);
-}
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .footer-bottom {
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
