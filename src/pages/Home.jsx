@@ -27,11 +27,13 @@ const Home = () => {
           <p data-aos="fade-up">
             تبي تبتكر <span className="linearSpan">صح؟</span> هذا مكانك!
           </p>
-          <button data-aos="zoom-in">أبدأ</button>
+          <a href="#objectives-section">
+            <button data-aos="zoom-in">أبدأ</button>
+          </a>
         </section>
-        
+
         {/* رسالة النادي*/}
-        <section className="mission-section">
+        <section className="mission-section" id="objectives-section">
           <h2 data-aos="fade-up">
             رسالة <span className="linearSpan">النادي</span>
           </h2>
@@ -63,13 +65,15 @@ const Home = () => {
                 والتوظيف
               </li>
             </ul>
-            <button>تقدم</button>
+            <a href="#vision-section">
+              <button>تقدم</button>
+            </a>
           </hgroup>
           <img src={imgInSecondSection} alt="SectionImage" data-aos="zoom-in" />
         </section>
 
         {/* رؤية النادي */}
-        <section className="vision-section" data-aos="fade-right">
+        <section className="vision-section" id="vision-section" data-aos="fade-right">
           <hgroup>
             <h2>
               رؤية <span className="linearSpan">النادي</span>
@@ -79,13 +83,15 @@ const Home = () => {
               من خلال التعليم، والتجربة، والعمل الجماعي، بما يعزز مساهمتهم في
               تحقيق التحول الرقمي.
             </p>
-            <button>تقدم</button>
+            <a href="#values-section">
+              <button>تقدم</button>
+            </a>
           </hgroup>
           <img src={errImg} alt="" data-aos="zoom-in" />
         </section>
 
         {/* قيم النادي */}
-        <section className="values-section">
+        <section className="values-section" id="values-section">
           <hgroup>
             <h2 data-aos="fade-up">
               قيم <span className="linearSpan">النادي</span>
@@ -108,16 +114,18 @@ const Home = () => {
                 وخارجها
               </li>
             </ul>
-            <button className="secondary-button" data-aos="zoom-in">
-              تقدم
-            </button>
+            <a href="#activities-section">
+              <button>تقدم</button>
+            </a>
           </hgroup>
           <img src={visionImg} alt="" />
         </section>
 
         {/* الفعاليات */}
-        <section className="activities-section">
-          <h2 data-aos="fade-up" className="linearSpan">الفعليات</h2>
+        <section className="activities-section" id="activities-section">
+          <h2 data-aos="fade-up" className="linearSpan">
+            الفعليات
+          </h2>
           <div>
             <hgroup>
               <h3 data-aos="fade-right">ما الذي تقدمه هذه الفعالية للطلاب؟</h3>
@@ -143,22 +151,21 @@ const Home = () => {
             <img src={functionImage} alt="" />
           </div>
         </section>
-              {/* this is a glows */}
-      <div className="glows">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-
+        {/* this is a glows */}
+        <div className="glows">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </main>
     </div>
   );

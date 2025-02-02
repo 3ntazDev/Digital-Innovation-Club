@@ -10,11 +10,13 @@ body {
   width: 100%;
   color: #111;
   z-index: 3;
+  overflow-x: hidden;
 }
 
 .home-container main {
   display: flex;
   flex-direction: column;
+  padding: 0 100px;
 }
 
 .home-container main section {
@@ -26,8 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* 69 is not flexible we have to chanage that */
-  gap: 69px;
+  gap:  4.5rem;
   height: 80vh;
   position: relative;
 }
@@ -55,16 +56,21 @@ body {
   margin: 0;
 }
 
-.hero-section button {
-  width: 14%;
+section a {
+  width: 30%;
   height: 6%;
+}
+
+.hero-section button {
+  width: 40%;
+  height: 100%;
   background: #00b0f4;
   color: white;
   border: 1px solid white;
   border-radius: 15px;
   font-size: 1.25rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s !important;
   /* i add 0 margin here becusae there is conflict between css files */
   margin: 0;
 }
@@ -106,6 +112,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 70vh;
+
 }
 
 .objectives-section hgroup,
@@ -135,7 +142,7 @@ body {
 
 .objectives-section button,
 .values-section button {
-  width: 29%;
+  width: 100%;
   height: 3rem;
   background: #00b0f4;
   color: white;
@@ -143,7 +150,7 @@ body {
   border-radius: 15px;
   font-size: 1.25rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s !important;
 }
 .objectives-section button:hover,
 .values-section button:hover {
@@ -171,7 +178,7 @@ body {
 }
 
 .vision-section button {
-  width: 29%;
+  width: 100%;
   height: 3rem;
   background: white;
   color: #00b0f4;
@@ -306,6 +313,7 @@ body {
   position: absolute;
   z-index: 1;
   bottom: 0;
+  transform-origin: left;
 }
 
 /* section one */

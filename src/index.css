@@ -24,7 +24,7 @@ body {
   place-items: center;
   min-height: 100vh;
   background: #fff;
-  padding: 0 100px;
+  overflow-x: hidden;
 
   /* the glow in the Background */
 
@@ -34,6 +34,14 @@ body {
   background-blend-mode: overlay;
   /* to change transparency of binary*/
 }
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
