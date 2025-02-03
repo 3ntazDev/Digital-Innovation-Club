@@ -1,7 +1,7 @@
 // Graduates.jsx
 import Card from "../components/Card";
 import "../styles/Graduates.css";
-import { GS } from "../assets/Data/GS.js";
+import { GS } from "../Data/GS.js";
 
 const Graduates = () => {
   return (
