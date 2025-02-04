@@ -1,81 +1,77 @@
 .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-  }
-  
-  .title {
-    color: #007bff;
-    font-size: 26px;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
 
+.title {
+  color: #007bff;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
 
-  
-  .contact-form {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 80%;
-    max-width: 900px;
-  }
-  
-  .left-section {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 40%;
-  }
-  
-  .right-section {
-    width: 60%;
-  }
-  
-  .input-field {
-    background: #111;
-    border: none;
-    padding: 15px;
-    border-radius: 15px;
-    font-size: 16px;
-    color: white;
-    width: 100%;
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-                inset -5px -5px 10px rgba(255, 255, 255, 0.1);
-  }
-  
-  .input-field::placeholder {
-    color: #999;
-    text-align: right;
-  }
-  
-  .message-box {
-    height: 120px;
-    width: 100%;
-    text-align: right;
-  }
-  
-  .submit-btn {
-    background: #004b80;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-    margin-top: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .submit-btn:hover {
-    background: #005fa3;
-  }
-  
+.contact-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+  max-width: 900px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+}
+
+.right-section {
+  width: 60%;
+}
+
+.input-field {
+  background: #111;
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 16px;
+  color: white;
+  width: 100%;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+.input-field::placeholder {
+  color: #999;
+  text-align: right;
+}
+
+.message-box {
+  height: 120px;
+  width: 100%;
+  text-align: right;
+}
+
+.submit-btn {
+  background: #004b80;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-top: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:hover {
+  background: #005fa3;
+}
