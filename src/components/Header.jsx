@@ -1,20 +1,28 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useRef} from "react";
 import logo from "../assets/logo.png";
 import "../styles/Header.css";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+  const hamburger = useRef(null);
+ const visibile = () => {
+    if (hamburger.current.style.display === "none") {
+      hamburger.current.style.display = "block";
+    } else {
+      hamburger.current.style.display = "none";
+    }
   };
 
-  return (
+  const reastHamburger = () => {
+    hamburger.current.style.display = "none";
+  }
+
+
+  return ( 
     <header>
       <img src={logo} alt="Digital Innovation Club logo" />
       <nav>
-        <ul className={isOpen ? "active" : ""}>
+        <ul>
           <li>
             <Link to="/" className="nav-link nav-link-primary">
               الرئيسية
@@ -46,10 +54,48 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        <div className="hamburger" onClick={toggleMenu}>
-          <div></div>
-          <div></div>
-          <div></div>
+      </nav>
+      <nav>
+        <button onClick={() => visibile()}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div ref={hamburger} className="hamburger">
+          <nav>
+            <ul>
+              <li>
+                <Link to="/" onClick={reastHamburger} className="nav-link nav-link-primary">
+                  الرئيسية
+                </Link>
+              </li>
+              <li>
+                <Link onClick={reastHamburger}  to="/graduates" className="nav-link">
+                  خريجين النادي
+                </Link>
+              </li>
+              <li>
+                <Link onClick={reastHamburger}  to="/about" className="nav-link">
+                  من نحن
+                </Link>
+              </li>
+              <li>
+                <Link onClick={reastHamburger}  to="/events" className="nav-link">
+                  الفعاليات
+                </Link>
+              </li>
+              <li>
+                <Link onClick={reastHamburger}  to="/team" className="nav-link">
+                  الفريق
+                </Link>
+              </li>
+              <li>
+                <Link onClick={reastHamburger}  to="/contact" className="nav-link">
+                  تواصل معنا
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
       </nav>
     </header>

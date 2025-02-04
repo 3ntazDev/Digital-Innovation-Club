@@ -23,7 +23,7 @@ export const teamData = [
     {
       title: "لجنة الفعاليات",
       members: [
-        { name: "ريان العتيبي", role: "قائد" },
+        { name: "ليان عبد الله", role: "قائد" },
         { name: "إبراهيم الطفيل", role: "نائب" },
       ],
     },
