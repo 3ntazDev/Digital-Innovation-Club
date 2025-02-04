@@ -14,7 +14,6 @@
 
 .team-title {
   font-size: 48px;
-  font-family: 'Georgia', serif;
   color: var(--primary-color); /* الأزرق الداكن للعناوين */
   margin-bottom: 20px;
 }
@@ -22,7 +21,6 @@
 .team-subtitle {
   font-size: 20px;
   color: #bbb; /* نفس اللون للعنوان الفرعي */
-  font-family: 'Arial', sans-serif;
   margin-bottom: 40px;
 }
 
@@ -32,7 +30,6 @@
 
 .committee-title {
   font-size: 36px;
-  font-family: 'Georgia', serif;
   color: var(--primary-color); /* اللون الأزرق الداكن للعناوين */
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -65,7 +62,6 @@
 
 .member-name {
   font-size: 22px;
-  font-family: 'Georgia', serif;
   font-weight: bold;
   color: var(--primary-color); /* لون أزرق داكن لاسم العضو */
   margin-bottom: 5px;
